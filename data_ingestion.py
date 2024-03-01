@@ -56,6 +56,5 @@ class QdrantIndexer:
 if __name__ == "__main__":
     data_path = "data/jobs_cleaned.csv"
     page_content_column = "clean_job_description"
-
     qdrant_indexer = QdrantIndexer()
     qdrant_indexer.create_qdrant_index(data_path, page_content_column)
